@@ -6,15 +6,17 @@ Simple microservice for creating downloadable `.ics` events (work in progress)
 
 #### Query Params
 
-`title` - event title
+`title` - string, event title
 
-`description` - event description
+`description` - string, event description
 
-`start` - ISO start date
+`start` - ISO date string, start date
 
-`end` - ISO end date
+`end` - ISO date string, end date
 
-`reminders` - event alarms, following shortform time different specification `1 day`, `1d`, `12h`, `3w`, etc (see [`ms`](https://npm.im/ms) for more information)
+`reminders` - string, event alarms, following shortform time different specification `1 day`, `1d`, `12h`, `3w`, etc (see [`ms`](https://npm.im/ms) for more information)
+
+`download` - boolean, sets `Content-Disposition` header to `attachment; filename=${slugifiedTitle}.ics` to enable one-click download
 
 > note: use `reminders` parameter multiple times for multiple reminders
 
