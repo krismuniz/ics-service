@@ -22,6 +22,10 @@ Simple microservice for creating downloadable `.ics` events (work in progress)
 
 ... more coming soon
 
+#### Example
+
+http://localhost:3000/event?title=My%20Event&description=test&start=2020-08-14&end=2020-08-14&reminders=2d&reminders=1week&reminders=12h
+
 ### Deploy Locally
 
 #### Clone the Repo
@@ -41,10 +45,6 @@ $ npm install
 ```bash
 $ PORT=3000 npm start
 ```
-
-#### Get `.ics` event files
-
-`http://localhost:3000/event?title=My%20Event&description=test&start=2020-08-14&end=2020-08-14&reminders=2d&reminders=1week&reminders=12h`
 
 ### License
 
