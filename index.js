@@ -54,8 +54,6 @@ app.get('/event', async (req, res) => {
     description,
     start: asArray(start),
     end: asArray(end),
-    startInputType: payload.endInputType || 'local',
-    endInputType: payload.endInputType || 'local',
     productId: 'ics-service',
     alarms
   })
